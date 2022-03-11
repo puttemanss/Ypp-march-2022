@@ -1,0 +1,48 @@
+{
+	"name": "Planning",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export_planning.txt",
+				"container": "files"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Vluchtnr",
+				"type": "String"
+			},
+			{
+				"name": "Airlinecode",
+				"type": "String"
+			},
+			{
+				"name": "Destcode",
+				"type": "String"
+			},
+			{
+				"name": "Planterminal",
+				"type": "String"
+			},
+			{
+				"name": "Plangate",
+				"type": "String"
+			},
+			{
+				"name": "Plantijd",
+				"type": "String"
+			}
+		]
+	}
+}
