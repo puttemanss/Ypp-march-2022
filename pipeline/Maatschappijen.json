@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Maatschappijen",
+				"name": "ImportWeer",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -46,13 +46,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Maatschapijen",
+						"referenceName": "Weer",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "SQLMaatschappijen",
+						"referenceName": "SQLWeer",
 						"type": "DatasetReference"
 					}
 				]
