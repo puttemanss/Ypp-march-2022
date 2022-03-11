@@ -1,0 +1,41 @@
+{
+	"name": "SQLPlanning",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Vluchtnr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Airlinecode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Destcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Planterminal",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Plangate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Plantijd",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "raw",
+			"table": "Planning"
+		}
+	}
+}
