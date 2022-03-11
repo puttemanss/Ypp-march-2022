@@ -1,0 +1,28 @@
+{
+	"name": "aankomst",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export_aankomst*",
+				"container": "files"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Vluchtid\tVliegtuigcode\tTerminal\tGate\tBaan\tBezetting\tVracht\tAankomsttijd",
+				"type": "String"
+			}
+		]
+	}
+}
