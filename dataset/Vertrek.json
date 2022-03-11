@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "export_vertrek_*.txt",
+				"fileName": "export_vertrek_2014.txt",
 				"container": "files"
 			},
 			"columnDelimiter": "\t",
