@@ -1,0 +1,28 @@
+{
+	"name": "pipeline3",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": true
+				}
+			}
+		],
+		"variables": {
+			"Vertrek": {
+				"type": "Array",
+				"defaultValue": [
+					"export_vertrek_2014.txt",
+					"export_vertrek_2015.txt",
+					"export_vertrek_2016.txt",
+					"export_vertrek_2017.txt"
+				]
+			}
+		},
+		"annotations": []
+	}
+}
