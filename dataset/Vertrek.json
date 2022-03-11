@@ -1,0 +1,56 @@
+{
+	"name": "Vertrek",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export_vertrek_2014.txt",
+				"container": "files"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Vluchtid",
+				"type": "String"
+			},
+			{
+				"name": "Vliegtuigcode",
+				"type": "String"
+			},
+			{
+				"name": "Terminal",
+				"type": "String"
+			},
+			{
+				"name": "Gate",
+				"type": "String"
+			},
+			{
+				"name": "Baan",
+				"type": "String"
+			},
+			{
+				"name": "Bezetting",
+				"type": "String"
+			},
+			{
+				"name": "Vracht",
+				"type": "String"
+			},
+			{
+				"name": "Vertrektijd",
+				"type": "String"
+			}
+		]
+	}
+}
