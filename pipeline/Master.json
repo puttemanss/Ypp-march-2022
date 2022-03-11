@@ -1,6 +1,21 @@
 {
 	"name": "Master",
 	"properties": {
+		"activities": [
+			{
+				"name": "Aankomst",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "Aankomst",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
 		"annotations": []
 	}
 }
