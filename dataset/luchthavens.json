@@ -1,0 +1,28 @@
+{
+	"name": "luchthavens",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export_luchthavens.txt",
+				"container": "files"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Airport\tCity\tCountry\tIATA\tICAO\tLat\tLon\tAlt\tTZ\tDST\tTimezone",
+				"type": "String"
+			}
+		]
+	}
+}
