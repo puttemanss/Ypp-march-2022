@@ -1,0 +1,41 @@
+{
+	"name": "klant",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export_klant.csv",
+				"container": "files"
+			},
+			"columnDelimiter": ";",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Vluchtid",
+				"type": "String"
+			},
+			{
+				"name": "Operatie",
+				"type": "String"
+			},
+			{
+				"name": "Faciliteiten",
+				"type": "String"
+			},
+			{
+				"name": "Shops\r",
+				"type": "String"
+			}
+		]
+	}
+}
