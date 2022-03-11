@@ -14,7 +14,6 @@
 				"container": "files"
 			},
 			"columnDelimiter": "\t",
-			"rowDelimiter": "",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
