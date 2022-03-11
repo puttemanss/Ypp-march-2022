@@ -1,5 +1,5 @@
 {
-	"name": "klant",
+	"name": "Klant",
 	"properties": {
 		"activities": [
 			{
@@ -45,13 +45,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "klant",
+						"referenceName": "Klant",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "SQLklant",
+						"referenceName": "SQLKlant",
 						"type": "DatasetReference"
 					}
 				]

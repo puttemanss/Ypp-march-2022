@@ -1,5 +1,5 @@
 {
-	"name": "SQLklant",
+	"name": "SQLKlant",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
