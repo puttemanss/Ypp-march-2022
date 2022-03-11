@@ -1,0 +1,184 @@
+{
+	"name": "Weer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export_weer.txt",
+				"container": "files"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Datum",
+				"type": "String"
+			},
+			{
+				"name": "DDVEC",
+				"type": "String"
+			},
+			{
+				"name": "FHVEC",
+				"type": "String"
+			},
+			{
+				"name": "FG",
+				"type": "String"
+			},
+			{
+				"name": "FHX",
+				"type": "String"
+			},
+			{
+				"name": "FHXH",
+				"type": "String"
+			},
+			{
+				"name": "FHN",
+				"type": "String"
+			},
+			{
+				"name": "FHNH",
+				"type": "String"
+			},
+			{
+				"name": "FXX",
+				"type": "String"
+			},
+			{
+				"name": "FXXH",
+				"type": "String"
+			},
+			{
+				"name": "TG",
+				"type": "String"
+			},
+			{
+				"name": "TN",
+				"type": "String"
+			},
+			{
+				"name": "TNH",
+				"type": "String"
+			},
+			{
+				"name": "TX",
+				"type": "String"
+			},
+			{
+				"name": "TXH",
+				"type": "String"
+			},
+			{
+				"name": "T10N",
+				"type": "String"
+			},
+			{
+				"name": "T10NH",
+				"type": "String"
+			},
+			{
+				"name": "SQ",
+				"type": "String"
+			},
+			{
+				"name": "SP",
+				"type": "String"
+			},
+			{
+				"name": "Q",
+				"type": "String"
+			},
+			{
+				"name": "DR",
+				"type": "String"
+			},
+			{
+				"name": "RH",
+				"type": "String"
+			},
+			{
+				"name": "RHX",
+				"type": "String"
+			},
+			{
+				"name": "RHXH",
+				"type": "String"
+			},
+			{
+				"name": "PG",
+				"type": "String"
+			},
+			{
+				"name": "PX",
+				"type": "String"
+			},
+			{
+				"name": "PXH",
+				"type": "String"
+			},
+			{
+				"name": "PN",
+				"type": "String"
+			},
+			{
+				"name": "PNH",
+				"type": "String"
+			},
+			{
+				"name": "VVN",
+				"type": "String"
+			},
+			{
+				"name": "VVNH",
+				"type": "String"
+			},
+			{
+				"name": "VVX",
+				"type": "String"
+			},
+			{
+				"name": "VVXH",
+				"type": "String"
+			},
+			{
+				"name": "NG",
+				"type": "String"
+			},
+			{
+				"name": "UG",
+				"type": "String"
+			},
+			{
+				"name": "UX",
+				"type": "String"
+			},
+			{
+				"name": "UXH",
+				"type": "String"
+			},
+			{
+				"name": "UN",
+				"type": "String"
+			},
+			{
+				"name": "UNH",
+				"type": "String"
+			},
+			{
+				"name": "EV2",
+				"type": "String"
+			}
+		]
+	}
+}
