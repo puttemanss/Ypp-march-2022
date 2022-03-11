@@ -20,7 +20,15 @@
 		},
 		"schema": [
 			{
-				"name": "Name\tIATA\tICAO",
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "IATA",
+				"type": "String"
+			},
+			{
+				"name": "ICAO",
 				"type": "String"
 			}
 		]
