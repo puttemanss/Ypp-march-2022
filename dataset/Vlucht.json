@@ -1,0 +1,48 @@
+{
+	"name": "Vlucht",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export_vlucht.txt",
+				"container": "files"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Vluchtid",
+				"type": "String"
+			},
+			{
+				"name": "Vluchtnr",
+				"type": "String"
+			},
+			{
+				"name": "Airlinecode",
+				"type": "String"
+			},
+			{
+				"name": "Destcode",
+				"type": "String"
+			},
+			{
+				"name": "Vliegtuigcode",
+				"type": "String"
+			},
+			{
+				"name": "Datum",
+				"type": "String"
+			}
+		]
+	}
+}
