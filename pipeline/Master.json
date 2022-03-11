@@ -16,19 +16,6 @@
 				}
 			},
 			{
-				"name": "Aankomst1",
-				"type": "ExecutePipeline",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"pipeline": {
-						"referenceName": "Aankomst",
-						"type": "PipelineReference"
-					},
-					"waitOnCompletion": true
-				}
-			},
-			{
 				"name": "Banen",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
