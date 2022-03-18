@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "Dimensies",
 	"properties": {
 		"activities": [
 			{
@@ -47,6 +47,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 2
+								},
 								"sink": {
 									"name": "Datum",
 									"type": "DateTime",
@@ -54,6 +58,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 3
+								},
 								"sink": {
 									"name": "DatumDateTime",
 									"type": "DateTime",
@@ -61,6 +69,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 4
+								},
 								"sink": {
 									"name": "Datumnaam",
 									"type": "String",
@@ -68,6 +80,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 5
+								},
 								"sink": {
 									"name": "Datumtekst",
 									"type": "String",
@@ -75,6 +91,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 6
+								},
 								"sink": {
 									"name": "Jaar",
 									"type": "Int32",
@@ -82,6 +102,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 7
+								},
 								"sink": {
 									"name": "Semesternummer",
 									"type": "Int32",
@@ -89,6 +113,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 8
+								},
 								"sink": {
 									"name": "Semester",
 									"type": "String",
@@ -96,6 +124,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 9
+								},
 								"sink": {
 									"name": "JaarSemester",
 									"type": "String",
@@ -103,6 +135,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 10
+								},
 								"sink": {
 									"name": "Kwartaalnummer",
 									"type": "Int32",
@@ -110,6 +146,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 11
+								},
 								"sink": {
 									"name": "Kwartaal",
 									"type": "String",
@@ -117,6 +157,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 12
+								},
 								"sink": {
 									"name": "JaarKwartaal",
 									"type": "String",
@@ -124,6 +168,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 13
+								},
 								"sink": {
 									"name": "Maandnummer",
 									"type": "Int32",
@@ -131,6 +179,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 14
+								},
 								"sink": {
 									"name": "Maand",
 									"type": "String",
@@ -138,6 +190,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 15
+								},
 								"sink": {
 									"name": "JaarMaandnummer",
 									"type": "Int32",
@@ -145,6 +201,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 16
+								},
 								"sink": {
 									"name": "MaandJaar",
 									"type": "String",
@@ -152,6 +212,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 17
+								},
 								"sink": {
 									"name": "Maandnaam",
 									"type": "String",
@@ -159,6 +223,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 18
+								},
 								"sink": {
 									"name": "MaandKort",
 									"type": "String",
@@ -166,6 +234,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 19
+								},
 								"sink": {
 									"name": "jjjj-mm",
 									"type": "String",
@@ -173,6 +245,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 20
+								},
 								"sink": {
 									"name": "Weeknummer",
 									"type": "Int32",
@@ -180,6 +256,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 21
+								},
 								"sink": {
 									"name": "WeekJaar",
 									"type": "String",
@@ -187,6 +267,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 22
+								},
 								"sink": {
 									"name": "Week",
 									"type": "String",
@@ -194,6 +278,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 23
+								},
 								"sink": {
 									"name": "JaarWeek",
 									"type": "String",
@@ -201,6 +289,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 24
+								},
 								"sink": {
 									"name": "Dagnummer",
 									"type": "Int32",
@@ -208,6 +300,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 25
+								},
 								"sink": {
 									"name": "Dag",
 									"type": "String",
@@ -215,6 +311,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 26
+								},
 								"sink": {
 									"name": "Weekdagnummer",
 									"type": "Int32",
@@ -222,6 +322,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 27
+								},
 								"sink": {
 									"name": "JaarDagNummer",
 									"type": "Int32",
@@ -229,6 +333,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 28
+								},
 								"sink": {
 									"name": "DagKort",
 									"type": "String",
@@ -236,6 +344,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 29
+								},
 								"sink": {
 									"name": "IsWeekend",
 									"type": "String",
@@ -243,6 +355,10 @@
 								}
 							},
 							{
+								"source": {
+									"type": "String",
+									"ordinal": 30
+								},
 								"sink": {
 									"name": "IsWettelijkeFeestdag",
 									"type": "String",
