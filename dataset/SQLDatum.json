@@ -1,0 +1,149 @@
+{
+	"name": "SQLDatum",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "DatumID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Datum",
+				"type": "date"
+			},
+			{
+				"name": "DatumDateTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Datumnaam",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Datumtekst",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Jaar",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Semesternummer",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Semester",
+				"type": "nvarchar"
+			},
+			{
+				"name": "JaarSemester",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Kwartaalnummer",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Kwartaal",
+				"type": "nvarchar"
+			},
+			{
+				"name": "JaarKwartaal",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Maandnummer",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Maand",
+				"type": "nvarchar"
+			},
+			{
+				"name": "JaarMaandnummer",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MaandJaar",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Maandnaam",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaandKort",
+				"type": "nvarchar"
+			},
+			{
+				"name": "jjjj-mm",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Weeknummer",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WeekJaar",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Week",
+				"type": "nvarchar"
+			},
+			{
+				"name": "JaarWeek",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dagnummer",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Dag",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Weekdagnummer",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "JaarDagNummer",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DagKort",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsWeekend",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsWettelijkeFeestdag",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DimDatum"
+		}
+	}
+}
