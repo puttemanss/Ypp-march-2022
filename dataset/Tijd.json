@@ -13,8 +13,9 @@
 				"fileName": "DimTijd.csv",
 				"container": "dimensies"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": ";",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": [
