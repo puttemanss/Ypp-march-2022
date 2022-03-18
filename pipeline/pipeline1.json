@@ -1,0 +1,276 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Datum",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"type": "String",
+									"ordinal": 1
+								},
+								"sink": {
+									"name": "DatumID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "Datum",
+									"type": "DateTime",
+									"physicalType": "date"
+								}
+							},
+							{
+								"sink": {
+									"name": "DatumDateTime",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"sink": {
+									"name": "Datumnaam",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Datumtekst",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Jaar",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "Semesternummer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "Semester",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "JaarSemester",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Kwartaalnummer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "Kwartaal",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "JaarKwartaal",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Maandnummer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "Maand",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "JaarMaandnummer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "MaandJaar",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Maandnaam",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "MaandKort",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "jjjj-mm",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Weeknummer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "WeekJaar",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Week",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "JaarWeek",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Dagnummer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "Dag",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "Weekdagnummer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "JaarDagNummer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DagKort",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "IsWeekend",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "IsWettelijkeFeestdag",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Datum",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SQLDatum",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
