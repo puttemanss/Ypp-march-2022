@@ -20,93 +20,123 @@
 		},
 		"schema": [
 			{
+				"name": "DatumID",
 				"type": "String"
 			},
 			{
+				"name": "Datum",
 				"type": "String"
 			},
 			{
+				"name": "DatumDateTime",
 				"type": "String"
 			},
 			{
+				"name": "Datumnaam",
 				"type": "String"
 			},
 			{
+				"name": "Datumtekst",
 				"type": "String"
 			},
 			{
+				"name": "Jaar",
 				"type": "String"
 			},
 			{
+				"name": "Semesternummer",
 				"type": "String"
 			},
 			{
+				"name": "Semester",
 				"type": "String"
 			},
 			{
+				"name": "JaarSemester",
 				"type": "String"
 			},
 			{
+				"name": "Kwartaalnummer",
 				"type": "String"
 			},
 			{
+				"name": "Kwartaal",
 				"type": "String"
 			},
 			{
+				"name": "JaarKwartaal",
 				"type": "String"
 			},
 			{
+				"name": "Maandnummer",
 				"type": "String"
 			},
 			{
+				"name": "Maand",
 				"type": "String"
 			},
 			{
+				"name": "JaarMaandnummer",
 				"type": "String"
 			},
 			{
+				"name": "MaandJaar",
 				"type": "String"
 			},
 			{
+				"name": "Maandnaam",
 				"type": "String"
 			},
 			{
+				"name": "MaandKort",
 				"type": "String"
 			},
 			{
+				"name": "jjjj-mm",
 				"type": "String"
 			},
 			{
+				"name": "Weeknummer",
 				"type": "String"
 			},
 			{
+				"name": "WeekJaar",
 				"type": "String"
 			},
 			{
+				"name": "Week",
 				"type": "String"
 			},
 			{
+				"name": "JaarWeek",
 				"type": "String"
 			},
 			{
+				"name": "Dagnummer",
 				"type": "String"
 			},
 			{
+				"name": "Dag",
 				"type": "String"
 			},
 			{
+				"name": "Weekdagnummer",
 				"type": "String"
 			},
 			{
+				"name": "JaarDagNummer",
 				"type": "String"
 			},
 			{
+				"name": "DagKort",
 				"type": "String"
 			},
 			{
+				"name": "IsWeekend",
 				"type": "String"
 			},
 			{
+				"name": "IsWettelijkeFeestdag",
 				"type": "String"
 			}
 		]
