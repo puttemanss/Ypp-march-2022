@@ -1,0 +1,116 @@
+{
+	"name": "SQLTijd",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "TijdID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Tijd",
+				"type": "time",
+				"scale": 0
+			},
+			{
+				"name": "Tijdtekst",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Uur",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Minuut",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Seconde",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "TotaalSeconden",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TijdDecimaal",
+				"type": "decimal",
+				"precision": 6,
+				"scale": 4
+			},
+			{
+				"name": "Uur30Minuten",
+				"type": "time",
+				"scale": 0
+			},
+			{
+				"name": "Uur30MinutenDecimaal",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 2
+			},
+			{
+				"name": "Uur15Minuten",
+				"type": "time",
+				"scale": 0
+			},
+			{
+				"name": "Uur15MinutenDecimaal",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 2
+			},
+			{
+				"name": "Uur10Minuten",
+				"type": "time",
+				"scale": 0
+			},
+			{
+				"name": "Uur10MinutenDecimaal",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 2
+			},
+			{
+				"name": "Uur5Minuten",
+				"type": "time",
+				"scale": 0
+			},
+			{
+				"name": "Uur5MinutenDecimaal",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 2
+			},
+			{
+				"name": "UurMinuten",
+				"type": "time",
+				"scale": 0
+			},
+			{
+				"name": "UurMinutenDecimaal",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 2
+			},
+			{
+				"name": "AM-PM",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DimTijd"
+		}
+	}
+}
