@@ -1,0 +1,55 @@
+{
+	"name": "SSIS",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute SSIS package1",
+				"type": "ExecuteSSISPackage",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"packageLocation": {
+						"packagePath": "ETL/SSIS_ETL_Case/WF_Master.dtsx",
+						"type": "SSISDB"
+					},
+					"environmentPath": null,
+					"connectVia": {
+						"referenceName": "integrationRuntime-SSIS",
+						"type": "IntegrationRuntimeReference"
+					},
+					"loggingLevel": "Basic",
+					"projectParameters": {
+						"SQL_DWH_ConnectionString": {
+							"value": {
+								"type": "AzureKeyVaultSecret",
+								"store": {
+									"referenceName": "AzureKeyVault",
+									"type": "LinkedServiceReference"
+								},
+								"secretName": "SQL-DWH-Connectionstring"
+							}
+						},
+						"SQL_OLTP_ConnectionString": {
+							"value": {
+								"type": "AzureKeyVaultSecret",
+								"store": {
+									"referenceName": "AzureKeyVault",
+									"type": "LinkedServiceReference"
+								},
+								"secretName": "SQL-OLTP-ConnectionString"
+							}
+						}
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
