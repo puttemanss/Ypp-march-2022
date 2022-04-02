@@ -1,5 +1,5 @@
 {
-	"name": "SSIS",
+	"name": "Master ETL",
 	"properties": {
 		"activities": [
 			{
